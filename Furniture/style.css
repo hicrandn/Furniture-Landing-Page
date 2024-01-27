@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+    
+    --color: rgb(227, 248, 107);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    margin: auto;
+    max-width: var(--max-width) ;
+}
+.container__header{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+.container_title{
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+
+}
+img{
+    width: 100%;
+}
+.logo__header{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.logo__header img{
+    max-width: 250px;
+}
+.contact_us{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.contact_us p{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: rgb(75, 75, 78);
+    cursor: pointer;
+}
+nav{
+    background-color: var(--color);
+
+}
+.nav__link{
+    font-size: .5rem;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .4rem;
+    flex-wrap: wrap;
+}
+.nav__link a{
+    font-size: .8rem ;
+    color: var(--white);
+    transition: 0.3s;
+}
+.nav__link a:hover{
+    color: rgb(253, 140, 1);
+}
+.nav__link i {
+    font-size: 1.2rem;
+}
+header{
+    min-height: 300px;
+    background-image: url(images/pexels-maksim-goncharenok-4352247.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header_container{
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: rgb(35, 37, 37);
+}
+.header_container p{
+    font-size: 2rem;
+    color: #40484E;
+}
+.header_container h1{
+    font-size: 1.7rem;
+    color: #40484E;
+
+}
+.header_container button{
+    margin-top: 1rem;
+    margin-bottom: 12rem;
+    padding: .5rem 1rem;
+    border: 3px solid rgb(59, 57, 57);
+    border-radius: 20px;
+    color: gray;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .3s;
+}
+.header_container button:hover{
+    background-color:rgb(253, 140, 1);
+    transition: .3s;
+}
+.bann1{
+    background-color:white;
+}
+.bann1__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.bann1__container .icon{
+    display: grid;
+    text-align: center;
+    gap: 0.5rem;
+    color: grey;
+    font-size: 0.8rem;
+    cursor: pointer;
+
+}
+.bann1__container img {
+    width: 80px;
+    margin: 15px 20px;
+
+}
+.section__title {
+margin: 30px 10px;
+display: flex;
+text-align: center;
+justify-content: center;
+color:#40484E;
+font-size: x-large;
+
+
+}
+.arrivalls_nav{
+    margin: 50px;
+    display: flex;
+    gap: 2rem;
+    font-weight: 400;
+    color: rgb(171, 161, 145);
+}
+.arrivalls_nav span{
+    cursor: pointer;
+    transition: 0.3s;
+}
+.arrivalls_nav span:hover{
+    color: rgb(227, 248, 107);
+}
+.arrivalls__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.arrivalls__image{
+    display: flex;
+}
+.arrivalls__image:first-child{
+    grid-area: 1/1/2/3;
+}
+
+.section__banner2 {
+    margin: 80px 0px;
+    background-image: url("images/sonback.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section__banner2{
+    color: white;
+    text-align: center;
+
+}
+.section__banner2 p{
+    font-size: 1.5rem;
+    color: white;
+}
+.section__banner2 h2{
+    font-size: 5rem;
+    font-weight: 500;
+    color: white;
+}
+.countdown{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+
+}
+.square{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(253, 140, 1) ;
+    display: grid;
+    place-content: center;
+    border-radius: 5px;
+}
+.section__banner2 button{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: rgb(127, 127, 136);
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.section__banner2 button:hover{
+    background-color: rgb(253, 140, 1) ;
+    transition: 0.2s;
+}
+.section__header .section__tittle{
+    text-align: center;
+    font-size: xx-large;
+    color: gray;
+}
+.seller__nav{
+    float: right;
+    font-size: 2rem;
+    color: orange;
+    cursor: pointer;
+
+}
+.seller__nav span{
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.seller__nav span:hover{
+    color: rgb(253, 140, 1);
+}
+.seller__grid{
+    margin: 80px 40px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+.seller__card{
+    cursor: pointer;
+
+}
+.seller__card__details{
+    padding: 1rem 0;
+    background-color: gainsboro;
+    text-align: center;
+}
+.seller__card__details .price{
+    font-size: 0.8rem;
+}
+.seller__card__details .price span{
+    color: rgb(253, 140, 1);
+}
+.banner__3{
+    background-image: url("images/grayhome.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner__3__container{
+    color: rgb(253, 250, 250);
+    text-align: center;
+    padding: 8rem 1rem;
+}
+.banner__3__container p{
+    font-size: 1.5rem;
+}
+.banner__3__container h2{
+    font-size: 2rem;
+}
+.banner__3__container a{
+    text-align: none;
+    width: 30px;
+    color: white;
+}
+.blog__grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+
+}
+.blog__details{
+    display: grid;
+    gap: 0.5rem;
+    color: rgb(151, 147, 147);
+}
+.blog__details p{
+    font-size: 0.8rem;
+}
+.blog__details h4{
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.blog__details span{
+    width: fit-content;
+    font-size: .8rem;
+    color: rgb(246, 185, 72);
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+.blog__details span:hover{
+    color: rgb(253, 140, 1);
+}
+footer{
+    margin-top: 40px;
+    background-color: gainsboro;
+}
+.footer__container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5rem;
+    color: #40484E;
+}
+.footer__col img {
+    max-width: 150px;
+    margin-bottom: 2rem;
+}
+.footer__col i{
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+.footer__col h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.footer__col p{
+    font-size: .8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.footer__col p:hover{
+    color:rgb(253, 140, 1);
+}
+.footer__bar{
+    padding: .5rem;
+    font-size: .8rem;
+    text-align: center;
+    color: white;
+    background-color: rgb(253, 140, 1);
+}
+.logos img{
+    width: 29px;
+}
